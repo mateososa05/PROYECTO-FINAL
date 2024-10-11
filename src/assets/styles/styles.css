@@ -1,0 +1,51 @@
+form{
+     display: flex;
+    justify-content: center;
+     align-items: center;
+     text-align: center;
+        
+}
+
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 250px;
+    box-shadow: 0px 0px 60px -10px rgb(133, 127, 127);
+    flex-direction: column;
+    border-radius: 5px;
+}
+
+.info{
+    margin: 10px 0px 10px 0px;
+}
+
+.labelemail{
+    margin-right: 65px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.labelpassword{
+    margin-right: 20px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputs{
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+button{
+    width: 70%;
+    height: 30px;
+    margin-top: 15px;
+    border: none;
+    color: white;
+    background-color: rgb(37, 88, 184);
+    border-radius: 5px;
+    cursor: pointer;
+}

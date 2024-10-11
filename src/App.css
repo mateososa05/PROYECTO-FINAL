@@ -1,3 +1,27 @@
+.App{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+}
+
+.logos{
+  width: 20px;
+  height: 20px;
+}
+
+.imagenProducto{
+  width: 80px;
+  height: 80px;
+}
+
+.imagenCarrousel{
+  width: 80px;
+  height: 100px;
+}
+
+
 /* Estilos para la galería de productos */
 .product-gallery {
     display: grid;

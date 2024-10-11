@@ -17,7 +17,6 @@ const Contacto = () => {
                                 <a href="mailto:joaquinsonda5@micorreo.com">
                                     <button type="button">
                                         Contacto
-                                        //-------importar los botones de boostrap, etc.----
                                     </button>
                                 </a>
                             </div>
