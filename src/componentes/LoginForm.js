@@ -9,7 +9,7 @@ function LoginForm() {
   const [password, setPassword] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
   const [loading, setLoading] = useState(false);
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -32,7 +32,7 @@ function LoginForm() {
   };
 
   return (
-    
+
 
 
     <form className='formulario' onSubmit={handleSubmit}>
@@ -48,7 +48,7 @@ function LoginForm() {
         />
       </div>
       <div className='info' >
-        <label  className='labelpassword' >Contraseña:</label>
+        <label className='labelpassword' >Contraseña:</label>
         <input
           className='inputs'
           type='password'

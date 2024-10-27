@@ -1,13 +1,8 @@
-form{
-     display: flex;
+form {
+    display: flex;
     justify-content: center;
-     align-items: center;
-     text-align: center;
-        
-}
-
-
-.formulario{
+    align-items: center;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,36 +11,48 @@ form{
     box-shadow: 0px 0px 60px -10px rgb(133, 127, 127);
     flex-direction: column;
     border-radius: 5px;
+    background-color: rgba(50, 18, 80, 0.637);
+    color: white;
 }
 
-.info{
-    margin: 10px 0px 10px 0px;
+
+
+.info {
+    margin: 10px 0px 20px 0px;
 }
 
-.labelemail{
-    margin-right: 65px;
-    
+.labelemail {
+    margin-right: 55px;
+
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.labelpassword{
+.labelpassword {
     margin-right: 20px;
-    
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.inputs{
+.inputs {
     border: 1px solid gray;
     border-radius: 5px;
 }
 
-button{
-    width: 70%;
+button {
+    width: 40%;
     height: 30px;
-    margin-top: 15px;
     border: none;
     color: white;
-    background-color: rgb(37, 88, 184);
+    background-color: rgb(0, 0, 0);
     border-radius: 5px;
     cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(11, 17, 73);
+    transition: background-color 0.3s ease;
+}
+
+button:active {
+    color: black;
+    background-color: rgb(255, 255, 255);
 }

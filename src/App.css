@@ -3,6 +3,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: #1a1a1a;
   
 }
 
@@ -84,6 +85,7 @@
   .product-info {
     padding: 15px;
     text-align: center;
+    cursor: default;
   }
   
   .description {
@@ -153,18 +155,19 @@ header {
   }
   
   .nav-links li {
-    margin-left: 20px;
+    margin: 10px;
   }
   
   .nav-links a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s ease;
+    
   }
   
   .nav-links a:hover {
-    color: #ff6f61;
+    color: #851ee6;
   }
   
   /* Dropdown menu (oculto por defecto) */
@@ -189,32 +192,40 @@ header {
   }
   
   .dropdown-menu ul li a {
-    color: white;
+    color: rgb(255, 255, 255);
     text-decoration: none;
     font-size: 16px;
   }
   
   .dropdown-menu ul li a:hover {
-    color: #ff6f61;
+    color: #7722ff;
   }
   
   /* Estilos responsivos */
   @media screen and (max-width: 768px) {
-    
     .hamburger {
       display: flex;
+      cursor: pointer; /* Añadir cursor para que se sepa que es clickeable */
     }
   
-    
     .nav-links {
-      display: none;
+      display: none; /* Esconde el menú por defecto en pantallas pequeñas */
+    }
+  
+    .nav-links.active {
+      display: flex; /* Muestra el menú cuando se activa */
+      flex-direction: column; /* Asegúrate de que los enlaces estén apilados */
+      position: absolute; /* Posiciona el menú */
+      top: 60px; /* Ajusta según la altura de tu navbar */
+      background-color: #333; /* Color de fondo del menú */
+      width: 100%; /* Ancho completo */
+      z-index: 10; /* Asegúrate de que esté por encima de otros elementos */
     }
   
     .dropdown-menu {
-      display: block;
+      display: block; /* Muestra el menú desplegable */
     }
   }
-  
 
 
   
@@ -229,6 +240,28 @@ footer {
   footer .footer-texto {
     margin: 20px 0;
     font-size: 18px;
+  }
+
+  #contacto{
+    background-color: black;
+    color: white;
+  }
+
+  #button-contact{
+    width: 70px;
+    margin: 20px;
+    background-color: gray;
+  }
+                                
+  #parrafo-contacto{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px;
+  }
+
+  .hablemos{
+    font-size: 40px;
+    border-top: 1px solid gray;
+    padding-top: 20px;
   }
   
  
@@ -278,5 +311,31 @@ footer {
     .derechos-de-autor {
       font-size: 12px;
     }
+  }
+
+  /* estilos de details */
+  .container-button-detail{
+    display: flex;
+    justify-content:space-evenly;
+    
+  }
+
+
+  .button-detail{
+    width: 150px;
+  }
+
+  .img-detail{
+    border-radius: 10px;
+  }
+
+  #container-detail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(180, 175, 187, 0.548);
+    padding: 30px;
+    border-radius: 10px;
   }
   

@@ -4,18 +4,18 @@ const Contacto = () => {
     return (
         <div>
             <section id="contacto" className="contacto seccion-oscura">
-                <div className="container">
+                <div id='contacto' className="container">
                     <div class="container text-center rectangulo d-flex justify-content-evenly">
                         <div className="row">
                             <div className="col-12 col-md-4 seccion-titulo">
-                                ¡Hablemos!
+                                <h2 className='hablemos' >¡Hablemos!</h2>
                             </div>
                             <div className="col-12 col-md-4 descripcion">
-                                Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.
+                                <p id='parrafo-contacto' >Contáctame para iniciar tu proyecto de desarrollo web y haré que tu visión se vuelva realidad.</p>
                             </div>
                             <div className="col-12 col-md-4">
                                 <a href="mailto:joaquinsonda5@micorreo.com">
-                                    <button type="button">
+                                    <button id='button-contact' type="button">
                                         Contacto
                                     </button>
                                 </a>

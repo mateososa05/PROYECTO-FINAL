@@ -1,35 +1,44 @@
-import React from 'react'
-import Campera from '../../assets/img/DiseñoCampera.jpg'
-import CamperaEspalda from '../../assets/img/DiseñoCamperaEspalda.jpg'
-import LaGorda from '../../assets/img/DiseñoLagorda.jpg'
-import PostEspalda from '../../assets/img/DiseñoPostespalda.jpg'
-import PostFront from '../../assets/img/DiseñoPostfront.jpg'
-import PostPant from '../../assets/img/DiseñoPostpant-2.jpg'
+import React, { useState, useEffect } from 'react';
+import { Button, Icon, Image, Container } from 'semantic-ui-react';
+import Campera from '../../assets/img/DiseñoCampera.jpg';
+import CamperaEspalda from '../../assets/img/DiseñoCamperaEspalda.jpg';
+import LaGorda from '../../assets/img/DiseñoLagorda.jpg';
+import cincuenta from '../../assets/img/cincuenta.jpg'
+import carrousel from '../../assets/img/carrousel.avif'
+import sorteo from '../../assets/img/sorteo.jpg'
 
-const Carrousel = () => {
+const images = [
+  { label: 'Imagen 1', imgPath: cincuenta },
+  { label: 'Imagen 2', imgPath: carrousel },
+  { label: 'Imagen 3', imgPath: sorteo },
+];
+
+const Carousel = () => {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const handleNext = () => {
+    setActiveIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  const handleBack = () => {
+    setActiveIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  // Cambiar automáticamente la imagen cada 3 segundos
+  useEffect(() => {
+    const intervalId = setInterval(handleNext, 3000); // Cambia cada 3 segundos
+    return () => clearInterval(intervalId); // Limpiar el intervalo al desmontar
+  }, []);
+
   return (
-    <div>
-      <button className="next" onclick="moveSlide(1)">&#10095;</button>
-      <div class="carousel">
-        <div className="carousel-container">
-            <div className="carousel-slide">
-            <img className='imagenCarrousel' src={Campera} />
-                
-            </div>
-            <div className="carousel-slide">
+    <Container textAlign="center">
+      <Image
+        src={images[activeIndex].imgPath}
+        alt={images[activeIndex].label}
+        style={{ width: '100%', maxHeight: '400px', objectFit: 'cover' }} // Ajustar la imagen
+      />
+    </Container>
+  );
+};
 
-            <img className='imagenCarrousel' src={LaGorda} />
-
-            </div>
-            <div className="carousel-slide">
-            <img className='imagenCarrousel' src={PostPant} />
-            </div>
-        </div>
-        <button className="prev" onclick="moveSlide(-1)">&#10094;</button>
-        
-    </div>
-    </div>
-  )
-}
-
-export default Carrousel
+export default Carousel;
