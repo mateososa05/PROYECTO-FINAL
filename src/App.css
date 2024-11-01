@@ -114,25 +114,33 @@
 
   /* Estilos generales del header */
 header {
-    width: 100%;
-    background-color: #333;
-    padding: 10px 0;
-    position: relative;
-  }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-  }
-  
-  .navbar .logo {
-    width: 100px;
-    height: auto;
-    background-color: white; /* Esto es solo para marcar dónde irá el logo */
-  }
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Asegúrate de que esté sobre el contenido */
+  height: 60px; /* Define una altura fija */
+}
+
+/* Ajuste en .App para dejar espacio a la navbar fija */
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #1a1a1a;
+  padding-top: 60px; /* Da espacio suficiente según la altura de la navbar */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
   
   /* Menu de hamburguesa */
   .hamburger {

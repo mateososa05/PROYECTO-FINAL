@@ -11,26 +11,26 @@ const products = [
   {
     id: 1,
     image: Campera,
-    description: 'Camiseta beis unisex extragrande con estampado de portada de álbum de Green Day',
-    price: '24,99 €'
+    description: 'buzo negro con estampa violeta de algodon peinado calidad premium',
+    price: '36,99 €'
   },
   {
     id: 2,
     image: PostPant,
-    description: 'Camiseta beis unisex extragrande con estampado de portada de álbum de Green Day',
+    description: 'short negro estampa violeta 3 de algodon extra premium',
     price: '24,99 €'
   },
   {
     id: 3,
     image: PostEspalda,
-    description: 'Camiseta beis unisex extragrande con estampado de portada de álbum de Green Day',
-    price: '24,99 €'
+    description: 'buzo estampa blanca de algodon peinado calidad premium',
+    price: '50,99 €'
   },
   {
     id: 4,
     image: PostFront,
-    description: 'Camiseta beis unisex extragrande con estampado de portada de álbum de Green Day',
-    price: '24,99 €'
+    description: 'buzo negro con estampa violeta de algodon peinado calidad premium',
+    price: '36,99 €'
   },
   {
     id: 5,

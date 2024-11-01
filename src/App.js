@@ -1,12 +1,15 @@
 import './App.css';
 import Routing from './routing/Routing';
 import 'semantic-ui-css/semantic.min.css';
+import { CartProvider } from './context/CartContext';
 
 
 function App() {
   return (
     <div className="App">
-      <Routing />
+      <CartProvider>
+        <Routing />
+      </CartProvider>
     </div>
   );
 }
